@@ -1,0 +1,210 @@
+html{
+    height: 100%;
+    
+    
+}
+.sidebar {
+  height: 100%;
+  width: 70px;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  background-color: rgb(43, 39, 39);
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+
+#mySidenav a {
+  position: absolute;
+  right: -10px;
+  transition: 0.3s;
+  padding: 1px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  
+}
+
+#mySidenav a:hover {
+  right: 0;
+}
+
+#home {
+  top: 50px;
+  background-color: #4CAF50;
+  margin-left: 10px;
+}
+
+#about {
+  top: 160px;
+  background-color: #2196F3;
+}
+
+#gallery {
+  top: 270px;
+  background-color: #f44336;
+}
+
+.image img {
+  width: 300px;
+  height: 300px;
+  margin-left: 70px;
+  z-index: 1;
+}
+
+.toppicture{
+  
+  font-size: 20px;
+  margin-top: 150px;
+  margin-left: 170px;
+  padding: 18px 35px;
+  background: black;
+  color:rgb(216, 216, 216);
+  
+}
+img{
+    width: 800px;
+}
+.pic{
+    
+  margin-left: 80px;
+    margin-right: 60px;
+  margin-top: 50px;
+    width: 270px;
+    height  480px;
+}
+
+
+
+.butt{
+            font-family: Anke Calligraphic FG;
+            font-weight: normal;
+            font-size: 130px;
+            margin-top: -430px;
+            margin-left: -100px;
+            padding: 18px 35px;
+            text-decoration: none;
+            color:rgb(216, 216, 216);
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+    z-index: 3;
+          }
+
+body{
+    
+
+    background: url(wallpapersden.com_abstract-minimalism_3840x2160.jpg);
+    background-image:cover;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "luna";
+}
+
+header{
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    postion: fixed;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+header h1{
+    margin-top: -100px;
+    
+}
+header, header:before{
+    background: 50% 50% / cover;
+}
+
+header::before{
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url(wbpage1.jpg);
+    background-size: cover;
+    transform-origin: center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+    
+}
+
+
+header * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin:0;
+    padding: 1em 0;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index:-2;
+}
+
+
+.butt2{
+    text-align: justify;
+            font-family: comic san ms;
+            font-weight: normal;
+            font-size: 30px;
+            margin-top: -20px;
+            margin-left: 23px;
+            padding: 20px;
+    margin-right: 40px;
+            text-decoration: none;
+    background-color: black;
+            color:black;
+            border: 20px;
+    z-index: 5;
+          }
+
+.pic{
+    
+  margin-left: 35px;
+    margin-right: 0px;
+  margin-top: 50px;
+    width: 360px;
+    height: 640px;
+}
+
+
+.center{
+    
+    width: 800px;
+    height: 600px;
+    padding: 800px;
+}
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+
+
