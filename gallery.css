@@ -1,210 +1,144 @@
-html{
-    height: 100%;
-    
-    
-}
-.sidebar {
-  height: 100%;
-  width: 70px;
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  background-color: rgb(43, 39, 39);
-  overflow-x: hidden;
-  padding-top: 16px;
+*{
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
-
-#mySidenav a {
-  position: absolute;
-  right: -10px;
-  transition: 0.3s;
-  padding: 1px;
-  width: 100px;
-  text-decoration: none;
-  font-size: 30px;
-  color: white;
-  border-radius: 0 5px 5px 0;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  
+div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100%;
+  height: 100vh;
 }
 
-#mySidenav a:hover {
-  right: 0;
+h2{
+  font-size: 60px;
+  background: white;
+  padding: 8px 24px;
+  border-radius: 16px;
 }
 
-#home {
-  top: 50px;
-  background-color: #4CAF50;
-  margin-left: 10px;
-}
+div:nth-child(1){
+  background-image: url(Background2.jpg);
 
-#about {
-  top: 160px;
-  background-color: #2196F3;
+  background-size: cover;
 }
-
-#gallery {
-  top: 270px;
-  background-color: #f44336;
+div:nth-child(2){
+  background: violet;
 }
-
-.image img {
-  width: 300px;
+div:nth-child(3){
   height: 300px;
-  margin-left: 70px;
-  z-index: 1;
+  background-image: url(background1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+div:nth-child(4){
+  background: yellow;
 }
 
-.toppicture{
-  
-  font-size: 20px;
-  margin-top: 150px;
-  margin-left: 170px;
-  padding: 18px 35px;
-  background: black;
-  color:rgb(216, 216, 216);
-  
-}
-img{
-    width: 800px;
-}
-.pic{
-    
-  margin-left: 80px;
-    margin-right: 60px;
-  margin-top: 50px;
-    width: 270px;
-    height  480px;
+.container{
+
 }
 
-
-
-.butt{
-            font-family: Anke Calligraphic FG;
-            font-weight: normal;
-            font-size: 130px;
-            margin-top: -430px;
-            margin-left: -100px;
-            padding: 18px 35px;
-            text-decoration: none;
-            color:rgb(216, 216, 216);
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
-    z-index: 3;
-          }
-
-body{
-    
-
-    background: url(wallpapersden.com_abstract-minimalism_3840x2160.jpg);
-    background-image:cover;
-    margin: 0;
-    padding: 0;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    font-family: "luna";
+.navbar{
+  padding-top: 3%;
+  padding-right: 1%;
+	align-items:flex-start;
 }
 
-header{
-    box-sizing: border-box;
-    min-height: 100vh;
-    padding: 30vw 0 5vw;
-    postion: fixed;
-    transform-style: inherit;
-    width: 100vw;
-}
+.Menu_icon{
 
-header h1{
-    margin-top: -100px;
-    
-}
-header, header:before{
-    background: 50% 50% / cover;
-}
+	width: 50px;
+  padding-left: 3%;
+  padding-right: 2%;
+  padding-top: -.5%;
+	cursor: pointer;
 
-header::before{
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: block;
-    background-image: url(wbpage1.jpg);
-    background-size: cover;
-    transform-origin: center 0;
-    transform: translateZ(-1px) scale(2);
-    z-index: -1;
-    min-height: 100vh;
-    
+}
+nav{
+	flex: 1;
+	position: top;
+	text-align: right;
+
+}
+nav ul li{  /*home */
+  padding-top: .5%;
+	list-style: none;
+	display: inline-block;
+	margin-left: 25px;
+	position: relative;
+}
+nav ul li a{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-decoration: none;
+	color:#ffffff;
+	font-size: 30px;
+}
+nav ul li::after{
+  border-radius: 20px;
+	content: '';
+	height: 50%;
+	width: 0%;
+	background: #6047ec;
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	transition: 0.5s;
+}
+nav ul li:hover::after{
+	width: 100%;
 }
 
 
-header * {
-    font-weight: normal;
-    letter-spacing: 0.2em;
-    text-align: center;
-    margin:0;
-    padding: 1em 0;
+.card{
+	
+	width: 170px;
+	height: 200px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+}
+.card1{
+	margin-left: 1000px;
+	margin-top: 70px;
+	margin-bottom: 4500px;
+
+	
+	background-image: url(ilocosnorte.jpg);
+}
+.card2{
+	margin-left: 800px;
+	margin-top: 70px;
+	margin-bottom: 4500px;
+
+	background-image: url(ilocossur.jpg);
+}
+.card3{
+	margin-left: 1000px;
+	margin-top: 300px;
+	margin-bottom: 4500px;
+
+	background-image: url(launion.jpg);
+}
+.card4{
+	margin-left: 800px;
+	margin-top: 300px;
+	margin-bottom: 4500px;
+
+	background-image: url(pangasinan.jpg);
 }
 
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    z-index:-2;
+.card:hover{
+	filter: blur(70%);
+	transform: translateY(-10px);
 }
-
-
-.butt2{
-    text-align: justify;
-            font-family: comic san ms;
-            font-weight: normal;
-            font-size: 30px;
-            margin-top: -20px;
-            margin-left: 23px;
-            padding: 20px;
-    margin-right: 40px;
-            text-decoration: none;
-    background-color: black;
-            color:black;
-            border: 20px;
-    z-index: 5;
-          }
-
-.pic{
-    
-  margin-left: 35px;
-    margin-right: 0px;
-  margin-top: 50px;
-    width: 360px;
-    height: 640px;
-}
-
-
-.center{
-    
-    width: 800px;
-    height: 600px;
-    padding: 800px;
-}
-
-
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-}
-
-
-
