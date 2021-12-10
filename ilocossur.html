@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="ilocossur.css">
+	<link rel="stylesheet" href="jquery.flipster.min.css">
+	<title>Document</title>
 </head>
 <body>
-    <div class="container">
-		<div class="navbar">
-		<!--	<img src="sfdfsfsf" class="logo"> -->
-			<nav>
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="gallery.html">ART GALLERY</a></li>
-					<li><a href="">ABOUT</a></li>
-				</ul>
-			</nav>
-			
-			<img src="menu.png" class="Menu_icon">
-
+	<div class="hero">
+		<div class="carousel">
+			<ul>
+				<li><img src="img/ilocos1.jpg"></li>
+				<li><img src="img/ilocos2.jpg"></li>
+				<li><img src="img/ilocos3.jpg"></li>
+				<li><img src="img/ilocos4.jpg"></li>
+				<li><img src="img/ilocos5.jpg"></li>
+			</ul>
 		</div>
+	</div>
 
-    <h1> ITS A PRANKKKKK</h1>
-    </div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="jquery.flipster.min.js"></script>
+
+	<script>
+		$('.carousel').flipster();
+	</script>
 </body>
 </html>
