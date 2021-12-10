@@ -157,13 +157,13 @@ label:hover{
 
 
 
-#check3:checked ~ .container .photo-gallery .pic{
+#check3:checked ~ .container .photo-gallery .pic2{
     transform: scale(1);
     opacity: 1;
     position: relative;
 }
-#check3:checked ~ .container .photo-gallery .pic,
-#check3:checked ~ .container .photo-gallery .pic{
+#check3:checked ~ .container .photo-gallery .pic3,
+#check3:checked ~ .container .photo-gallery .pic4{
     opacity: 0;
     transform: scale(0);
     position: absolute;
@@ -171,9 +171,18 @@ label:hover{
 }
 
 
-
-
-
+#check4:checked ~ .container .photo-gallery .pic4{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+#check4:checked ~ .container .photo-gallery .pic2,
+#check4:checked ~ .container .photo-gallery .pic3{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
 .navbar{
 	height: 12%;
 	display: flex;
@@ -217,57 +226,4 @@ nav ul li::after{
 }
 nav ul li:hover::after{
 	width: 100%;
-}
-
-.pic img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    transition: .5s;
-    
-}
-           
-.pic1::before{ 
-    margin-left: 20px;
-    text-align: justify;
-    
-    content: "A festival in the Province of Ilocos Sur commemorating the separation of the two Ilocos provinces in 1818. This festival is a showcase of indigenous performances, religious rituals, as well cooking demos featuring the best of Ilocano dishes.";   
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-    width: 100%;
-    margin-top: -100px;
-    opacity: 0;
-    transition: .3s;
-    transition-delay: .2s;
-    z-index: 1;
-}
-
-.pic1::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    border-radius: 10px;
-    height: 0;
-    background-color: rgba(0,0,0,.4);
-    transition: .3s;
-}
-.pic1:hover::after{
-    height: 100%;
-}
-.pic1:hover::before{
-    margin-top: 0;
-    opacity: 100%;
-}
-
-h4{
-    color: rgb(0, 0, 0);
-    position: absolute;
-    margin-left: 300px;
 }

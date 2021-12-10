@@ -4,28 +4,56 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="ilocossur.css">
-	<link rel="stylesheet" href="jquery.flipster.min.css">
 	<title>Document</title>
+	<link rel="stylesheet" href="ilocossur.css">
 </head>
 <body>
-	<div class="hero">
-		<div class="carousel">
-			<ul>
-				<li><img src="img/ilocos1.jpg"></li>
-				<li><img src="img/ilocos2.jpg"></li>
-				<li><img src="img/ilocos3.jpg"></li>
-				<li><img src="img/ilocos4.jpg"></li>
-				<li><img src="img/ilocos5.jpg"></li>
-			</ul>
+	<div class="navbar">
+		<!--	<img src="sfdfsfsf" class="logo"> -->
+			<nav>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="">ABOUT</a></li>
+				</ul>
+			</nav>
+			
+			<img src="menu.png" class="Menu_icon">
+
+		</div>
+	<input type="radio" name="Photos" id="check1" checked>
+	<input type="radio" name="Photos" id="check2">
+	<input type="radio" name="Photos" id="check3">
+	<input type="radio" name="Photos" id="check4">
+
+	<div class="container">
+		<h1> ARTS OF ILOCOS SUR</h1>
+		<div class="top-content">
+			<h3>ARTS</h3>
+			<Label for="check1">ALL </Label>
+			<Label for="check2">FESTIVALS </Label>
+			<Label for="check3">HANDICRAFTS</Label>
+
+		</div>
+		<div class="photo-gallery">
+			
+			<div class="pic pic1" >
+				<h4>Kannawidan Ylocos Festival (Ilocos Sur)</h4>
+				<img src="img/ilocos1.jpg">
+			</div>
+
+			<div class="pic pic2">
+				<img src="img/ilocos2.jpg">
+			</div>
+			<div class="pic pic3">
+				<img src="img/ilocos3.jpg">
+			</div>
+			<div class="pic pic4">
+				<img src="img/ilocos4.jpg">
+			</div>
+			<div class="pic pic5">
+				<img src="img/ilocos5.jpg">
+			</div>
 		</div>
 	</div>
-
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="jquery.flipster.min.js"></script>
-
-	<script>
-		$('.carousel').flipster();
-	</script>
 </body>
 </html>
