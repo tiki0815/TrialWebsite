@@ -1,0 +1,372 @@
+*{ 
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+input{
+    display: none;
+}
+/* backgroundddddddddd */
+.container{    
+    width: 100%;
+    text-align: center;
+    
+}
+h1{
+    font-weight: bold;
+    font-size: 55px;
+    position: relative;
+    margin: 40px 0;
+    
+}
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 15px;
+    background: #00468b;
+    bottom: -10px;
+    left: 50%;
+    border-radius: 5px;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+.top-content{
+    background-color: #a1a1a1;
+    width: 90%;
+    margin: 0 auto 20px auto; 
+    height: 60px;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #2c4258;
+}
+.top-content2{
+    background-color: #a1a1a1;
+    width: 90%;
+    margin: 0 auto 20px auto; 
+    height: 60px;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #00468b;
+    margin-top: 50px;
+}
+h3{
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    margin: 40px 0;
+    
+}
+h3::before{
+    content: '';
+    position: absolute;
+    height: 5px;
+    background-color: crimson;
+    bottom: -10px;
+    left: 50%;
+    border-radius: 5px;
+    transform: translateX(-100%);
+
+}
+
+h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    height: 100%;
+    line-height: 60px;
+    font-size: 40px;
+    color: #181818;
+    transition: color .5s;
+}
+h2:hover{
+    color: #ff0037;
+}
+/* #00468b, #128fc8 */
+
+.photo-gallery{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.photo-gallery1{
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  
+}
+
+.pic{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow:  3px 3px 5px lightgray;
+    cursor: pointer;
+    transition: .5s;
+}
+          
+.pic::before{ 
+      
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(235, 235, 235);
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 1;
+    transition: .3s;
+    transition-delay: .2s;
+    z-index: 1;
+}
+
+.pic::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 0;
+    background-color: rgba(0,0,0,.4);
+    transition: .3s;
+}
+.pic:hover::after{
+    height: 100%;
+    opacity: 1;
+}
+.pic:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.navbar{
+	height: 12%;
+	display: flex;
+	align-items:flex-start;
+}
+.Menu_icon{
+	width: 50px;
+  padding-left: 2%;
+ 
+  padding-top: 2%;
+	cursor: pointer;
+}
+nav{
+	flex: 1;
+	text-align: right;
+
+}
+nav ul li{  /*home */
+	padding-top: 3%;
+	list-style: none;
+	display: inline-block;
+	margin-left: 20px;
+	position: relative;
+}
+nav ul li a{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-decoration: none;
+	color:#292626;
+	font-size: 30px;
+}
+nav ul li::after{
+	content: '';
+	height: 30%;
+	width: 0%;
+	border-radius: 20px;
+	background: #00468b;
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	transition: 0.5s;
+}
+nav ul li:hover::after{
+	width: 100%;
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s;
+    
+}
+           /*Dinengdeng*/
+.pic1::before{ 
+
+    text-align: justify;
+    margin-top: 30px;
+    content: "Dinengdeng Festival is the official festivity event of the municipality of Agoo, La Union, Philippines. It is annually celebrated during summer. ";   
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    width: 80%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .1s;
+    z-index: 1;
+}
+.pic2::before{ 
+
+        text-align: justify;
+        margin-top: 30px;
+        content: "This festival is associated to the famous culinary dishes –PINAKBET and BAGNET. Dinengdeng is one of the most popular Ilocano dishes that is cooked in a clay pot, and during the celebration there are contestants who create their best versions of it. ";   
+        position: absolute;
+    
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        width: 80%;
+        margin-top: -100px;
+        opacity: 0;
+        transition: .3s;
+        transition-delay: .1s;
+        z-index: 1;
+}
+/*Festival - pics END*/
+
+/*Bamboo Crafts*/
+.pic3::before{ 
+
+    text-align: justify;
+    margin-top: 30px;
+    content: "Bamboo crafting has been a traditional craft using a Bamboo as a raw material to create furniture and home decorations such as chairs, tables lamp shades and other decorations. Bamboo has a lot of uses and it is low cost to make, that is why it is good as business. ";
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    width: 80%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .1s;
+    z-index: 1;
+} 
+.pic4::before{ 
+
+        text-align: justify;
+        margin-top: 30px;
+        content: "Bamboo Crafting is known around the town of Up-Uplas, Supiden, La Union.";
+        position: absolute;
+    
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        width: 80%;
+        margin-top: -100px;
+        opacity: 0;
+        transition: .3s;
+        transition-delay: .1s;
+        z-index: 1;
+}
+/*end*/
+
+ /*Loom Weaving*/
+.pic5::before{ 
+
+    text-align: justify;
+    margin-top: 30px;
+    content: "Each provinces mostly in the Philippines has their own versions and unique Loom Weaving, and La union is one of it. In this province, they have this centuries-old craft flourishing in Bangar - a small municipality in the province. ";   
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    width: 80%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .1s;
+    z-index: 1;
+}
+.pic6::before{ 
+
+        text-align: justify;
+        margin-top: 30px;
+        content: "The materials used in for the loom weaving has its own story to tell and it is made with dedication and love considering that the process of making it is delicate and detailed, and they only do it with their bare hands. ";   
+        position: absolute;
+    
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        width: 80%;
+        margin-top: -100px;
+        opacity: 0;
+        transition: .3s;
+        transition-delay: .1s;
+        z-index: 1;
+}
+/*Stone Art*/
+.pic7::before{ 
+
+    text-align: justify;
+    margin-top: 30px;
+    content: "Another arts and crafts in La Union is the stone art. Stones are decorated and painted uniquely by the residents of Up-Uplas, Supiden, La Union and they considered it as one of the major product of the municipality. They transformed the stones into sculptures, garden and home decors that can be served as their souvenirs. ";
+
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 90%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .1s;
+    z-index: 1;
+}
+.pic8::before{ 
+
+    text-align: justify;
+    margin-top: 30px;
+    content: "Kamay na Bato Art Gallery is one of the unique attraction in Luna, La Union, where we can witness different arts that is carved and made from stones. Most of the art pieces in the Art Gallery is created and assembled by Mr. Vong Kim, a Korean national but married to a Filipina from Luna, La union.  ";
+
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 90%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .1s;
+    z-index: 1;
+}
+h4{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin-left: 300px;
+}
